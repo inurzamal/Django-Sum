@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title> {% block title %} {% endblock title %} </title>
+    <link rel="stylesheet" type="text/css" href='./static/css/style.css'>
+</head>
+<body>
+
+    <div class="header">
+
+        <ul class="nav">
+            <li><a href="/"> Home</a></li>
+            <li><a href="/services" > Services</a></li>
+            <li><a href="/contact"> Contact Us</a></li>
+            <li><a href="https://www.amazon.in/" target="_blank" > Amazon</a></li>  
+        </ul>
+    </div>
+
+    {% block body %}
+    {% endblock body %}
+
+</body>
+</html>
